@@ -1,3 +1,3 @@
 [submodule "gists/bash-aliases"]
 	path = gists/bash-aliases
-	url = https://gist.github.com/a141fc02e622f7a02b7fd5209cdab571.git
+	url = git@gist.github.com:a141fc02e622f7a02b7fd5209cdab571.git
