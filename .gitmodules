@@ -10,3 +10,6 @@
 [submodule "gists/vimrc"]
 	path = gists/vimrc
 	url = git@github.com:74eeabedf01c5cc7eede49718527b59d.git
+[submodule "dotfiles"]
+	path = dotfiles
+	url = git@github.com:andrew-erickson/dotfiles.git
