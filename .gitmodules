@@ -1,12 +1,12 @@
 [submodule "gists/bash-aliases"]
 	path = gists/bash-aliases
-	url = git@gist.github.com:a141fc02e622f7a02b7fd5209cdab571.git
+	url = git@github.com:a141fc02e622f7a02b7fd5209cdab571.git
 [submodule "gists/code-zen-sh"]
 	path = gists/code-zen-sh
-	url = git@gist.github.com:12830891b1e92bca2dbe2361894d23d9.git
+	url = git@github.com:12830891b1e92bca2dbe2361894d23d9.git
 [submodule "gists/bashrc"]
 	path = gists/bashrc
-	url = git@gist.github.com:9e5e3e41fa03e84268941a9908590a71.git
+	url = git@github.com:9e5e3e41fa03e84268941a9908590a71.git
 [submodule "gists/vimrc"]
 	path = gists/vimrc
-	url = git@gist.github.com:74eeabedf01c5cc7eede49718527b59d.git
+	url = git@github.com:74eeabedf01c5cc7eede49718527b59d.git
