@@ -9,7 +9,7 @@ curl -o .bash_aliases https://gist.githubusercontent.com/andrew-erickson/a141fc0
 curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh > ~/.bash_git
 
 #add .bashrc
-printf "\n%s\n\n" "$(curl https://gist.githubusercontent.com/andrew-erickson/9e5e3e41fa03e84268941a9908590a71/raw)" >>~/.bashrc
+printf "\n%s\n\n" "$(curl https://raw.githubusercontent.com/andrew-erickson/dotfiles/14223787766c22cfd40b70ca212c8e460662f6c0/.bashrc)" >> ~/.bashrc
 
 #add vim configs
 mkdir -p ~/.vim/colors
