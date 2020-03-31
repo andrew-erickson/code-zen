@@ -1,5 +1,5 @@
 #!/bin/bash
-#run this by 'bash -c "$(curl -fsSL https://gist.githubusercontent.com/andrew-erickson/12830891b1e92bca2dbe2361894d23d9/raw)"'
+#run this by 'bash -c "$(curl -fsSL https://raw.githubusercontent.com/andrew-erickson/code-zen/master/launch/code-zen.sh)"'
 cd ~
 
 #add .bash_aliases
@@ -10,13 +10,14 @@ curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh >
 
 #add .bashrc
 printf "\n%s\n\n" "$(curl https://raw.githubusercontent.com/andrew-erickson/dotfiles/14223787766c22cfd40b70ca212c8e460662f6c0/.bashrc)" >> ~/.bashrc
+echo '\n[ -r ~/.bashrc ] && . ~/.bashrc' >> ~/.bash_profile
 
 #add vim configs
 mkdir -p ~/.vim/colors
 cd ~/.vim/colors
 curl -O https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim
 cd ~
-curl -o .vimrc https://gist.githubusercontent.com/andrew-erickson/74eeabedf01c5cc7eede49718527b59d/raw
+curl -o .vimrc https://raw.githubusercontent.com/andrew-erickson/dotfiles/master/.vimrc
 source .vimrc
 
 #install linux brew
