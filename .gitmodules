@@ -1,3 +1,6 @@
 [submodule "dotfiles"]
 	path = dotfiles
 	url = git@github.com:andrew-erickson/dotfiles.git
+[submodule "ng-auction"]
+	path = ng-auction
+	url = ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/ng-auction
