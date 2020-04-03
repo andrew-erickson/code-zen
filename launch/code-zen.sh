@@ -27,11 +27,22 @@ echo 'eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >>~/.bash_profile
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 brew install gcc
 
-#generate ssh key
-ssh-keygen -f ~/.ssh/id_rsa -t rsa -N ''
+#generate ssh key for github
+ssh-keygen -f ~/.ssh/github_rsa -t rsa -N ''
 
-#wait for user prompt
-read -p "Copy key below and paste -> https://github.com/settings/ssh/new:"$'\n'$'\n'"$(cat ~/.ssh/id_rsa.pub)"$'\n'$'\n'"To continue, press ENTER: "
+#set on github
+read -p "Copy key below and paste -> https://github.com/settings/ssh/new:"$'\n'$'\n'"$(cat ~/.ssh/github_rsa.pub)"$'\n'$'\n'"To continue, press ENTER: "
+
+#generate ssh key for codecommit
+ssh-keygen -f ~/.ssh/codecommit_rsa -t rsa -N ''
+
+#set on aws iam
+read -p "Copy key below and paste -> https://console.aws.amazon.com/iam/home#/users/andrew?section=security_credentials:"$'\n'$'\n'"$(cat ~/.ssh/codecommit_rsa.pub)"$'\n'$'\n'"To continue, press ENTER: "
+
+#create a config file in .ssh
+#Host git-codecommit.*.amazonaws.com
+#  User <SSH key id>
+#  IdentityFile ~/.ssh/codecommit_rsa
 
 #clone code zen
 git clone --recurse-submodules git@github.com:andrew-erickson/code-zen.git
